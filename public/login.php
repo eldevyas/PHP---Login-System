@@ -6,23 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Login System</title>
-    <link rel="stylesheet" href="./../Style/style.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
     <form>
-
-        <label>
-            <div class="Icon">
-                <span class="material-symbols-outlined">
-                    <span class="material-symbols-outlined">
-                        account_circle
-                        </span>
-                </span>
-            </div>
-            <input type="TEXT" placeholder="USERNAME" autocomplete="off"/>
-        </label>
 
         <label>
             <div class="Icon">
@@ -42,20 +31,11 @@
             <input type="PASSWORD" placeholder="Enter your Password" autocomplete="off" />
         </label>
 
-        <label>
-            <div class="Icon">
-                <span class="material-symbols-outlined">
-                    lock
-                </span>
-            </div>
-            <input type="PASSWORD" placeholder="Confirm your Password" autocomplete="off" />
-        </label>
-
-        <button class="btn register FormControl">REGISTER</button>
+        <button class="btn login FormControl">LOGIN</button>
 
         <p>
-            Already have an account?
-            <a href="./login.html">Login</a>
+            Don't have an account?
+            <a href="./register.php">Register</a>
         </p>
     </form>
 </body>

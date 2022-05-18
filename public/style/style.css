@@ -122,7 +122,13 @@ label input{
     outline: none;
     padding: 0 50px;
     font-size: 12.5px;
+    text-transform: none;
 }
+
+::placeholder {
+    text-transform: uppercase !important;
+}
+
 
 .FormControl {
     width: 280px;
@@ -155,3 +161,13 @@ p a{
 p a:hover{
     text-decoration: underline;
 }
+
+
+.error {
+    background: #F2DEDE;
+    color: #0c0101;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+ }
