@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +16,19 @@
 <body>
     <h1><span>PHP</span> Login System</h1>
 
+    <?php
+        if (isset($_SESSION['UserID'])) 
+        {
+    ?>
+    <p>WELCOME BACK!</p>
+    <h1><?php echo $_SESSION['UserUsername'] ?></h1>
+
+    <?php
+        }
+        else
+        {
+    ?>
+
     <div class="buttons">
         <a href="./public/login.php">
             <button class="btn login">
@@ -25,6 +42,11 @@
             </button>
         </a>
     </div>
+    
+    <?php 
+        }
+    ?>
+
 </body>
 
 </html>

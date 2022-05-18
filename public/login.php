@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <form>
+    <form action="./../includes/login.inc.php" method="POST" >
 
         <label>
             <div class="Icon">
@@ -19,7 +19,7 @@
                     mail
                 </span>
             </div>
-            <input type="EMAIL" placeholder="Enter your E-mail" autocomplete="off"/>
+            <input type="text" name="username" placeholder="E-mail or Username" />
         </label>
 
         <label>
@@ -28,10 +28,10 @@
                     lock
                 </span>
             </div>
-            <input type="PASSWORD" placeholder="Enter your Password" autocomplete="off" />
+            <input type="PASSWORD" name="password" placeholder="Enter your Password"/>
         </label>
 
-        <button class="btn login FormControl">LOGIN</button>
+        <button type="submit" name="SUBMIT" class="btn login FormControl">LOGIN</button>
 
         <p>
             Don't have an account?

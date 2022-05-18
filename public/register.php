@@ -1,6 +1,4 @@
-<?php
-require('./../config/config.php');
-?>
+
 
 
 <!DOCTYPE html>
@@ -17,12 +15,6 @@ require('./../config/config.php');
 
 <body>
     <form action="./../includes/register.inc.php" method="POST">
-
-    <?php if (isset($_POST['error'])) { ?>
-
-        <p class="error"><?php echo $_POST['error']; ?></p>
-
-    <?php } ?>
 
         <label>
             <div class="Icon">
@@ -41,7 +33,7 @@ require('./../config/config.php');
                     mail
                 </span>
             </div>
-            <input type="EMAIL" name="email" id="email" placeholder="Enter your E-mail" autocomplete="off" required/>
+            <input type="EMAIL" name="email" id="email" placeholder="Enter your E-mail" required/>
         </label>
 
         <label>
@@ -50,7 +42,7 @@ require('./../config/config.php');
                     lock
                 </span>
             </div>
-            <input type="PASSWORD" name="password" id="password" placeholder="Enter your Password" autocomplete="off" required/>
+            <input type="PASSWORD" name="password" id="password" placeholder="Enter your Password" required/>
         </label>
 
         <label>
@@ -59,7 +51,7 @@ require('./../config/config.php');
                     lock
                 </span>
             </div>
-            <input type="PASSWORD" name="passwordRepeat" id="password" placeholder="Confirm your Password" autocomplete="off" required/>
+            <input type="PASSWORD" name="passwordRepeat" id="password" placeholder="Confirm your Password" required/>
         </label>
 
         <button type="submit" name="SUBMIT" class="btn register FormControl">REGISTER</button>
