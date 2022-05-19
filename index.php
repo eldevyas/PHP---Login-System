@@ -23,6 +23,12 @@
     <p>WELCOME BACK!</p>
     <h1><?php echo $_SESSION['UserUsername'] ?></h1>
 
+    <form class="buttons" action="./includes/logout.inc.php" method="POST">
+        <button type="submit" name="SUBMIT" class="btn register">
+            <a href="index.php" style="color: var(--ButtonText-2)">LOGOUT</a>
+        </button>
+    </form>
+
     <?php
         }
         else

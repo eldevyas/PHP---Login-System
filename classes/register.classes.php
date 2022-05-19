@@ -2,12 +2,12 @@
 
 class Register extends DatabaseHandler {
 
-    protected function setUser($username, $email, $password) {
-        $statement = $this->connect()->prepare('INSERT INTO users (user_username, user_email, user_password) VALUES (?, ?, ?);');
+    protected function setUser($username, $password, $email) {
+        $statement = $this->connect()->prepare('INSERT INTO users (user_username, user_password, user_email) VALUES (?, ?, ?);');
 
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-        if(!$statement->execute(array($username, $email, $hashedPassword))) {
+        if(!$statement->execute(array($username, $hashedPassword, $email))) {
             $statement = null;
             header("location: ./../index.php?error=SecondStatementFailed");
             exit();

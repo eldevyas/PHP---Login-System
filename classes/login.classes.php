@@ -8,7 +8,7 @@ class Login extends DatabaseHandler {
 
         if(!$statement->execute(array($username, $password))) {
             $statement = null;
-            header("location: ./../index.php?error=StatementFailed");
+            header("location: ./../index.php?error=SecondStatementFailed");
             exit();
         }
 

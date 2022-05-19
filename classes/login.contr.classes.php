@@ -20,13 +20,15 @@ class LoginController extends Login{
     }
 
     private function emptyInput() {
-        $result;
+        $result = true;
+
         if(empty($this->username) || empty($this->password)) {
                 $result = false;
         }
         else {
                 $result = true;
         }
+
         return $result;
     }
 
