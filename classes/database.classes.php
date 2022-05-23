@@ -1,5 +1,4 @@
 <?php
-
 class DatabaseHandler {
 
     protected function connect() {

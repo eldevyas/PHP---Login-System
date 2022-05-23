@@ -14,6 +14,7 @@ class Register extends DatabaseHandler {
         }
 
         $statement = null;
+
     }
 
     protected function checkUser($username, $email) {
